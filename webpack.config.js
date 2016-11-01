@@ -25,7 +25,6 @@ var commonConfig = {
   },
 
   module: {
-    noParse: /\.elm$/,
     loaders: [
       {
         test: /\.(eot|ttf|woff|woff2|svg)$/,
@@ -66,7 +65,6 @@ if ( TARGET_ENV === 'development' ) {
       loaders: [
         {
           test:    /\.elm$/,
-          exclude: [/elm-stuff/, /node_modules/],
           loader:  'elm-hot!elm-webpack?verbose=true&warn=true'
         },
         {
@@ -96,7 +94,6 @@ if ( TARGET_ENV === 'production' ) {
       loaders: [
         {
           test:    /\.elm$/,
-          exclude: [/elm-stuff/, /node_modules/],
           loader:  'elm-webpack'
         },
         {
