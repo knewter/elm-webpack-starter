@@ -1,15 +1,13 @@
 module Components.Hello exposing (..)
 
 import Html exposing (..)
-import Html.Attributes exposing (..)
-import String
+import Polymer.Paper as Paper
+import Html.Attributes exposing (attribute)
 
 
 -- hello component
 
 
-hello : Int -> Html a
-hello model =
-    div
-        [ class "h1" ]
-        [ text ("Hello, Elm" ++ ("!" |> String.repeat model)) ]
+helloPaper : Html msg
+helloPaper =
+    Paper.input [ attribute "value" "Hello elm-paper-input" ] []

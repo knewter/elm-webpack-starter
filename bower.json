@@ -1,0 +1,21 @@
+{
+  "name": "elm-webpack-starter",
+  "description": "Webpack setup for writing Elm apps",
+  "main": "",
+  "authors": [
+    "Aitor Oses"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/aitoroses/elm-webpack-starter",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "^1.7.0",
+    "paper-input": "^1.1.22"
+  }
+}
